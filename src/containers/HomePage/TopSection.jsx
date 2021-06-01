@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { BrandLogo } from '../../component/brandLogo';
+import { Button } from '../../component/button';
 import { Marginer } from '../../component/marginer';
 import TopSectionBackgroundImg from '../../images/landing-page.jpg'
 import TheBestSpecialistImg from '../../images/Work only with the best.png'
@@ -53,16 +54,21 @@ font-size:37px;
 `;
 
 export function TopSection(props) {
+    const {children} = props;
+    
     return (
         <div>
             <TopSectionContainer>
                 <BackgroundFilter>
+                    {children}
                     <TopSectionInnerContainer>
                         <LogoContainer>
                             <BrandLogo logoSize={60} textSize={50}/>
                             <Marginer direction="vertical" margin={8}/>
                             <SloganText>Find the right Expert...</SloganText>
                             <SloganText>For the job</SloganText>
+                            <Marginer direction="vertical" margin={20}/>
+                            <Button>Join Now</Button>
                         </LogoContainer>
                         <StandoutImage>
                             <img src={TheBestSpecialistImg} alt="image is not displayed"/>
