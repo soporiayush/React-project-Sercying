@@ -1,3 +1,3 @@
 export const deviceSize={
-    laptop:1366 ,
+    laptop:1300 ,
 }

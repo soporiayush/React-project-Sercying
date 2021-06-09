@@ -24,5 +24,5 @@ export const InnerPageContainer = styled.div`
   padding: 1em;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 `;

@@ -7,7 +7,7 @@ import TopSectionBackgroundImg from '../../images/landing-page.jpg'
 import TheBestSpecialistImg from '../../images/Work only with the best.png'
 
 const TopSectionContainer = styled.div`
-width: 1500px;
+width: 1498px;
 height:680px;
 background: url(${TopSectionBackgroundImg});
 background-position:0 -150px ;
@@ -15,7 +15,7 @@ background-size:cover;
 `;
 
 const BackgroundFilter = styled.div`
-width:1500px;
+width:1498px;
 height:100%;
 background-color: rgba(38,70,83,0.8);
 display: flex;

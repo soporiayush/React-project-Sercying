@@ -11,7 +11,7 @@ overflow:hidden;
 width:300px;
 min-height:250px;
 background-color:white;
-box-shadow: 0 0 1px rgba(0, 0, 0, 0.17);
+box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
 margin:0.5em;
 margin-bottom: 1.3em;
 `; 
