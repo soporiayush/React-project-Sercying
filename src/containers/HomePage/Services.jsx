@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
 import ServiceCard from "../../component/serviceCard/index.jsx"
+import { Button } from '../../component/button/index.jsx';
 const ServicesContainer = styled.div`
 width:100%;
 display:flex;
@@ -14,9 +15,27 @@ font-weight: 900;
 color:#000;
 `;
 
+const ButtonContainer = styled.div`
+width:100%;
+display:flex;
+justify-content: center;
+`;
+
 const ServicesWrapper = styled.div`
 display:flex;
 flex-wrap:wrap;
+`;
+
+const ViewMoreButton = styled(Button)`
+background-color: #f2f2f2;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+color:#959595;
+font-size:14px;
+&:hover{
+    background-color: #f2f2f2;
+    filter:contrast(0.8);   
+}
+
 `;
 
 const wait = (num) => num=new Promise((rs)=>setTimeout(rs,num))
@@ -62,9 +81,14 @@ export function Services(props) {
                         !isloading && 
                         offeredServices.map((service,idx)=>{
                             return(<ServiceCard id={idx}{...service}/>)
-                        
                     })}
                 </ServicesWrapper>
+                <ButtonContainer>
+                    
+                    {!isServicesEmpty && 
+                        !isloading &&(<ViewMoreButton>View More</ViewMoreButton>)
+                    }
+                </ButtonContainer>
             </ServicesContainer>
         </>
     );

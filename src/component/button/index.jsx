@@ -23,7 +23,7 @@ const ButtonWrapper = styled.button`
 export function Button(props) {
     const {size}=props;
     return (
-        <ButtonWrapper size={size}>
+        <ButtonWrapper size={size} className={props.className}>
             {props.children}
         </ButtonWrapper>
     );
