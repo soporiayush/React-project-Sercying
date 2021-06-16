@@ -7,6 +7,7 @@ import { deviceSize } from "../../component/responsive/index.jsx"
 import {Services} from "./Services.jsx"
 import SpecialistAd from "../../component/specialistAd/index.jsx"
 import { Marginer } from "../../component/marginer/index.jsx"
+import Footer from "../../component/footer/index.jsx"
 
 
 const ContentContainer = styled.div`
@@ -31,7 +32,9 @@ padding:1em;
                 </ContentContainer>
                 <Marginer direction="vertical" margin="5em"/>
                 <SpecialistAd/>
+                <Marginer direction="vertical" margin="5em"/>
             </InnerPageContainer>
+            <Footer/>
         </PageContainer>
     </>
     

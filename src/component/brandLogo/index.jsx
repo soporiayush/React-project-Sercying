@@ -18,21 +18,21 @@ height: ${({size})=>size?size + "px" : "4em"};
 const LogoTitle = styled.h2`
 margin:0;
 font-size: ${({size})=>size?size + "px" : "35px"};
-color:#fff;
-font-weight:700;
+color:${({color})=>color ? color : "#fff"};;
+font-weight:800;
 margin-left:8px;
 `;
 
 export function BrandLogo(props) {
     
-    const {logoSize,textSize} = props
+    const {logoSize,textSize, color, hideLogo} = props
     
     return (
         <BrandLogoContainer>
-            <LogoImage size={logoSize}>
+            {!hideLogo && <LogoImage size={logoSize}>
                 <img src={LogoImg} alt="This is a logo image"/>
-            </LogoImage>
-            <LogoTitle size={textSize}>
+            </LogoImage>}
+            <LogoTitle size={textSize} color={color}>
                 Servycing
             </LogoTitle>
         </BrandLogoContainer>
