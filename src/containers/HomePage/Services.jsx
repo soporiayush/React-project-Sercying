@@ -38,7 +38,7 @@ font-size:14px;
 
 `;
 
-const wait = (num) => num=new Promise((rs)=>setTimeout(rs,num))
+//const wait = (num) => num=new Promise((rs)=>setTimeout(rs,num))
 
 
 export function Services(props) {
@@ -58,7 +58,7 @@ export function Services(props) {
             console.log("Error has occured!!",err);
         })
 
-        await wait(2000)
+        
         if(response){
             setLoading(false)
             setServices(response.data)

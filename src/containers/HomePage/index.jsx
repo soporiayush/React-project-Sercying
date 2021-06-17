@@ -23,7 +23,7 @@ padding:1em;
     return<>
         <PageContainer>
             <TopSection>
-                <Navbar></Navbar>
+                <Navbar useTransparent/>
             </TopSection>
             <InnerPageContainer>
             <Marginer direction="vertical" margin="3em"/>

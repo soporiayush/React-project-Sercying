@@ -71,7 +71,7 @@ export function TopSection(props) {
                             <Button>Join Now</Button>
                         </LogoContainer>
                         <StandoutImage>
-                            <img src={TheBestSpecialistImg} alt="image is not displayed"/>
+                            <img src={TheBestSpecialistImg} alt=""/>
                         </StandoutImage>
                     </TopSectionInnerContainer>
                 </BackgroundFilter>

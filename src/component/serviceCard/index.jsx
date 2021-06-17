@@ -87,7 +87,7 @@ font-weight:400;
 `;
 
 function ServiceCard(props) {
-    const {thumbnailUrl, specialist, id, title, rate, rating} = props;
+    const {thumbnailUrl, specialist, title, rate, rating} = props;
     return (
         <CardContaier>
             <TopContainer>
